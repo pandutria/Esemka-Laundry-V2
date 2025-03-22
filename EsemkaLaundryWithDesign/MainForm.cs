@@ -118,6 +118,13 @@ namespace EsemkaLaundryWithDesign
 
         private void btnDeposit_Click(object sender, EventArgs e)
         {
+            panelMain.Controls.Clear();
+            var f = new FormTransactionDeposit();
+            f.TopLevel = false;
+
+            panelMain.Controls.Add(f);
+            f.Show();
+
             btnDeposit.BackColor = Color.FromArgb(199, 22, 28);
 
             btnService.BackColor = Color.FromArgb(177, 1, 0);

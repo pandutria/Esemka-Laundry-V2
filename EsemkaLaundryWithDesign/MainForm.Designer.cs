@@ -53,7 +53,7 @@
             this.btnViewTransaction = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
-            this.panelMain = new System.Windows.Forms.Panel();
+            this.panelMain = new Bunifu.UI.WinForms.BunifuPanel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbMenu1)).BeginInit();
             this.panelContainer.SuspendLayout();
@@ -78,7 +78,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1209, 51);
+            this.panel1.Size = new System.Drawing.Size(1342, 51);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -373,18 +373,24 @@
             // 
             // panelMain
             // 
-            this.panelMain.BackColor = System.Drawing.Color.White;
+            this.panelMain.BackgroundColor = System.Drawing.Color.White;
+            this.panelMain.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelMain.BackgroundImage")));
+            this.panelMain.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelMain.BorderColor = System.Drawing.Color.Transparent;
+            this.panelMain.BorderRadius = 3;
+            this.panelMain.BorderThickness = 1;
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelMain.Location = new System.Drawing.Point(244, 51);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(965, 801);
+            this.panelMain.ShowBorders = true;
+            this.panelMain.Size = new System.Drawing.Size(1098, 801);
             this.panelMain.TabIndex = 4;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1209, 852);
+            this.ClientSize = new System.Drawing.Size(1342, 852);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.panelContainer);
             this.Controls.Add(this.panel1);
@@ -438,6 +444,6 @@
         private System.Windows.Forms.Button btnViewTransaction;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panelMain;
+        private Bunifu.UI.WinForms.BunifuPanel panelMain;
     }
 }

@@ -13,6 +13,7 @@ namespace EsemkaLaundryWithDesign
 {
     public partial class Form1 : Form
     {
+        public static Employee employee;
         public Form1()
         {
             InitializeComponent();
@@ -38,6 +39,7 @@ namespace EsemkaLaundryWithDesign
 
             if (query != null)
             {
+                employee = query;   
                 new MainForm().Show();
                 Hide();
             }

@@ -35,6 +35,11 @@ namespace EsemkaLaundryWithDesign
                 {
                     ((BunifuTextBox)enable).Enabled = true;
                 }
+
+                if (enable is BunifuTextbox)
+                {
+                    ((BunifuTextbox)enable).Enabled = true;
+                }
             }
         }
 
@@ -44,7 +49,7 @@ namespace EsemkaLaundryWithDesign
             {
                 if (clear is BunifuTextBox)
                 {
-                    ((BunifuTextBox)clear).Text = string.Empty;
+                    ((BunifuTextBox)clear).Text = "";
                 }
 
                 if (clear is ComboBox)
@@ -60,6 +65,11 @@ namespace EsemkaLaundryWithDesign
                 if (clear is NumericUpDown)
                 {
                     ((NumericUpDown)clear).Value = 0;
+                }
+
+                if (clear is DataGridView)
+                {
+                    ((DataGridView)clear).Rows.Clear();
                 }
             }
         }
