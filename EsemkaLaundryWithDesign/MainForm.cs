@@ -136,6 +136,13 @@ namespace EsemkaLaundryWithDesign
 
         private void btnPrepaid_Click(object sender, EventArgs e)
         {
+            panelMain.Controls.Clear();
+            var f = new FormPrepaidPackage();
+            f.TopLevel = false;
+
+            panelMain.Controls.Add(f);
+            f.Show();
+
             btnPrepaid.BackColor = Color.FromArgb(199, 22, 28);
 
             btnService.BackColor = Color.FromArgb(177, 1, 0);
@@ -147,6 +154,13 @@ namespace EsemkaLaundryWithDesign
 
         private void btnViewTransaction_Click(object sender, EventArgs e)
         {
+            panelMain.Controls.Clear();
+            var f = new FormViewTransaction();
+            f.TopLevel = false;
+
+            panelMain.Controls.Add(f);
+            f.Show();
+
             btnViewTransaction.BackColor = Color.FromArgb(199, 22, 28);
 
             btnService.BackColor = Color.FromArgb(177, 1, 0);

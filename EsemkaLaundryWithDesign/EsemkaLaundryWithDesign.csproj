@@ -283,6 +283,12 @@
     <Compile Include="FormPackage.Designer.cs">
       <DependentUpon>FormPackage.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPrepaidPackage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrepaidPackage.Designer.cs">
+      <DependentUpon>FormPrepaidPackage.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormService.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -294,6 +300,12 @@
     </Compile>
     <Compile Include="FormTransactionDeposit.Designer.cs">
       <DependentUpon>FormTransactionDeposit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormViewTransaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormViewTransaction.Designer.cs">
+      <DependentUpon>FormViewTransaction.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -319,11 +331,17 @@
     <EmbeddedResource Include="FormPackage.resx">
       <DependentUpon>FormPackage.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPrepaidPackage.resx">
+      <DependentUpon>FormPrepaidPackage.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormService.resx">
       <DependentUpon>FormService.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormTransactionDeposit.resx">
       <DependentUpon>FormTransactionDeposit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormViewTransaction.resx">
+      <DependentUpon>FormViewTransaction.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

@@ -34,12 +34,14 @@ namespace EsemkaLaundryWithDesign
                 if (enable is BunifuTextBox)
                 {
                     ((BunifuTextBox)enable).Enabled = true;
-                }
+                } 
+                
 
                 if (enable is BunifuTextbox)
                 {
                     ((BunifuTextbox)enable).Enabled = true;
                 }
+
             }
         }
 
@@ -67,10 +69,12 @@ namespace EsemkaLaundryWithDesign
                     ((NumericUpDown)clear).Value = 0;
                 }
 
-                if (clear is DataGridView)
-                {
-                    ((DataGridView)clear).Rows.Clear();
-                }
+                //if (clear is DataGridView)
+                //{
+                //    if ()
+
+                //    ((DataGridView)clear).Rows.Clear();
+                //}
             }
         }
     }
